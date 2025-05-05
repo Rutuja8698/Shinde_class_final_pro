@@ -1,5 +1,6 @@
 import React, { Suspense, useEffect } from "react";
 import Footer from "../../components/Home/Footer";
+import { BsWhatsapp } from "react-icons/bs";
 
 // Features data
 const classFeatures = [
@@ -98,6 +99,16 @@ const Features = () => {
               Start Your Journey Today!
             </a>
           </div>
+          {/* WhatsApp Chat Button */}
+                        <a
+                          href="https://wa.me/9763358004"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full flex items-center gap-2 shadow-lg z-50"
+                        >
+                          <BsWhatsapp className="text-xl" />
+                          <span className="font-semibold">Chat with us</span>
+                        </a>
         </div>
       </section>
 

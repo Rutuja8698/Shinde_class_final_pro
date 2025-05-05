@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { BsWhatsapp } from "react-icons/bs";
+import Footer from "../../components/Home/Footer";
 
 const LoginForm = () => {
   const [role, setRole] = useState("user");
@@ -11,7 +13,9 @@ const LoginForm = () => {
   e.preventDefault();
 
   try {
-    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/auth/login`, {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/auth/login`,
+
+      {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ role, username, password }),
@@ -111,6 +115,16 @@ const LoginForm = () => {
           </a>
         </p>
       </div>
+       {/* WhatsApp Chat Button */}
+                    <a
+                      href="https://wa.me/9763358004"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full flex items-center gap-2 shadow-lg z-50"
+                    >
+                      <BsWhatsapp className="text-xl" />
+                      <span className="font-semibold">Chat with us</span>
+                    </a>
     </div>
   );
 };

@@ -31,7 +31,7 @@ const Footer = () => {
             Join Shinde Classes and Shape Your Future!
           </h3>
           <a
-            href="/admissions"
+            href="\login"
             className="px-6 py-3 bg-yellow-500 text-black rounded-full font-medium hover:bg-yellow-400 hover:text-black transition-all duration-300"
           >
             Enroll Now
@@ -81,23 +81,23 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="/privacy-policy"
+                  href="/home"
                   className="text-gray-400 hover:text-primary hover:underline transition transform hover:scale-105"
                 >
-                  Privacy Policy
+                  Primary goal
                 </a>
               </li>
               <li>
                 <a
-                  href="/terms-of-service"
+                  href="/home"
                   className="text-gray-400 hover:text-primary hover:underline transition transform hover:scale-105"
                 >
-                  Terms of Service
+                  Inspiring bright futures
                 </a>
               </li>
               <li>
                 <a
-                  href="/admissions"
+                  href="/login"
                   className="text-gray-400 hover:text-primary hover:underline transition transform hover:scale-105"
                 >
                   Admissions
@@ -105,7 +105,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/careers"
+                  href="/achievements"
                   className="text-gray-400 hover:text-primary hover:underline transition transform hover:scale-105"
                 >
                   Careers
@@ -122,7 +122,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="/"
+                  href="/home"
                   className="text-gray-400 hover:text-primary hover:underline transition transform hover:scale-105"
                 >
                   Home
